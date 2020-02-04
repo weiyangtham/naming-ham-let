@@ -13,12 +13,26 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
+## Division 1A
+
 ```{r scrape}
 
 source(here::here("scripts/tables.R"))
 
 knitr::kable(babyname_points %>% filter(division == "1A"))
 
+```
+
+## Division 1B
+
+```{r}
+knitr::kable(babyname_points %>% filter(division == "1B"))
+```
+
+## Division 2A
+
+```{r}
+knitr::kable(babyname_points %>% filter(division == "2A"))
 ```
 
 
