@@ -1,0 +1,19 @@
+---
+title: "Naming Ham-let/National Hurling League 2020"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r scrape}
+
+source(here::here("scripts/tables.R"))
+
+knitr::kable(babyname_points %>% filter(division == "1A"))
+
+```
+
+
